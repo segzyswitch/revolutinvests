@@ -16,11 +16,11 @@ class Controller
 
     // $this->db_username = 'root';
     // $this->db_password = '';
-    // $this->db_name = 'velloxa';
+    // $this->db_name = 'revolutinvests';
 
-    $this->db_username = 'root';
-    $this->db_password = '';
-    $this->db_name = 'revolutinvests';
+    $this->db_username = 'velloxaw_default';
+    $this->db_password = 'Primestar1$';
+    $this->db_name = 'velloxaw_revolut';
 
     try {
       $this->conn = @new PDO("mysql:host=$this->db_server;dbname=$this->db_name", $this->db_username, $this->db_password);
