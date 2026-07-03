@@ -9,10 +9,10 @@
 	<meta name="keywords" content="Revolut Invests">
 	<meta name="description" content="Revolut Invests">
 	<link rel="canonical" href="https://zenithwealthpro.com/account/user/change-password" />
-	<link rel="shortcut icon" href="https://zenithwealthpro.com/account/../icon-o.png"
+	<link rel="shortcut icon" href="https://zenithwealthpro.com/account/../icon.png"
 		type="image/x-icon" />
 
-	<link rel="icon" href="https://zenithwealthpro.com/account/../icon-o.png"
+	<link rel="icon" href="https://zenithwealthpro.com/account/../icon.png"
 		type="image/x-icon" />
 	<link rel="stylesheet" href="https://zenithwealthpro.com/account/assets/global/css/fontawesome.min.css" />
 	<link rel="stylesheet" href="https://zenithwealthpro.com/account/assets/frontend/css/vendor/bootstrap.min.css" />

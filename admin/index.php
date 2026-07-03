@@ -11,7 +11,7 @@ if ( isset($_SESSION["aave_auth_login_id"]) && isset($_SESSION["admin_status"]) 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Revolut Invests - Admin Login</title>
-	<link rel="shortcut icon" href="../icon-o.png" type="image/x-icon">
+	<link rel="shortcut icon" href="../icon.png" type="image/x-icon">
 	<link rel="stylesheet" href="./assets/theme/global/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="./assets/theme/global/css/line-awesome.min.css" />
 	<link rel="stylesheet" href="./assets/theme/global/css/bootstrap-icons.min.css" />

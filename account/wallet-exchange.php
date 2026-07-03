@@ -12,9 +12,9 @@ require '../config/session.php';
 	<meta name="keywords" content="Revolut Invests">
 	<meta name="description" content="Revolut Invests">
 	<link rel="canonical" href="./user/wallet-exchange" />
-	<link rel="shortcut icon" href="./../icon-o.png" type="image/x-icon" />
+	<link rel="shortcut icon" href="./../icon.png" type="image/x-icon" />
 
-	<link rel="icon" href="./../icon-o.png"
+	<link rel="icon" href="./../icon.png"
 		type="image/x-icon" />
 	<link rel="stylesheet" href="./assets/global/css/fontawesome.min.css" />
 	<link rel="stylesheet" href="./assets/frontend/css/vendor/bootstrap.min.css" />
