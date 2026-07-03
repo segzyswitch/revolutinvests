@@ -1,7 +1,7 @@
 <?php
 require '../config/session.php';
 
-$refferal = "https://live.velloxawealth.com/register?invite=" . $user_info['uuid'];
+$refferal = "https://revolutinvests.com/register?invite=" . $user_info['uuid'];
 ?>
 
 <!DOCTYPE html>

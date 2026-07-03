@@ -1,7 +1,7 @@
 <?php
 session_start();
 require "../config/Controller.php";
-ini_set('SMTP', 'velloxawealth.com');
+ini_set('SMTP', 'revolutinvests.com');
 ini_set('smtp_port', 465);
 
 $Controller = new Controller;
@@ -59,7 +59,7 @@ if ( isset($_POST["register"]) ) {
   }
 
   // activation link
-  $activation_link = "https://revolutinvests.velloxawealth.com/activate.php?token=" . $uuid;
+  $activation_link = "https://revolutinvests.com/activate.php?token=" . $uuid;
 
   // Insert record
   $sql = "INSERT INTO users(uuid, fname, lname, email, phone, password, alt_password, referral)
@@ -73,7 +73,7 @@ if ( isset($_POST["register"]) ) {
       <html>
       <head>
         <meta charset='utf-8'>
-        <title>Activate Your Account | Velloxa Wallet</title>
+        <title>Activate Your Account | RevolutInvests Wallet</title>
         <meta name='viewport' content='width=device-width,initial-scale=1'>
         <style>
           /* Some clients ignore style tags — important styles are inline below.
@@ -101,7 +101,7 @@ if ( isset($_POST["register"]) ) {
                           <!-- Example: <img src='{{LOGO_URL}}' alt='Company logo' width='120' style='display:block;'> -->
                           <div style='width:140px; height:38px; background:#0f0f10; border-radius:4px; display:inline-block; padding:5px 7.5px;display:flex;'>
                             <!-- Logo placeholder - replace with <img> -->
-                            <img src='https://images.velloxawealth.com/icon-0.png' width='70' />
+                            <img src='https://revolutinvests.com/icon-0.png' width='70' />
                           </div>
                         </td>
                         <td align='right' style='vertical-align:middle; font-size:13px; color:#9b9b9b;'>
@@ -152,7 +152,7 @@ if ( isset($_POST["register"]) ) {
                       <tr>
                         <td style='border-top:1px solid rgba(255,255,255,0.04); padding-top:14px;'>
                           <p style='margin:0; font-size:13px; color:#9a9a9a; line-height:19px;'>For security reasons, this link will expire in 24 hours. If you did not sign up for an account with us, please ignore this email.</p>
-                          <p style='margin:10px 0 0 0; font-size:13px; color:#9a9a9a; line-height:19px;'>If you have any questions or need help, feel free to contact our support team at contact@velloxawealth.com</p>
+                          <p style='margin:10px 0 0 0; font-size:13px; color:#9a9a9a; line-height:19px;'>If you have any questions or need help, feel free to contact our support team at contact@revolutinvests.com</p>
                           <p style='margin:10px 0 0 0; font-size:12px; color:#777; font-style:italic;'>
                             This is an automated message, please do not reply.
                           </p>
@@ -182,9 +182,9 @@ if ( isset($_POST["register"]) ) {
       </html>
     ";
     $subject = "Confirm Your Account - Revolut Invests";
-    $headers = "From: Revolut Invests <support@velloxawealth.com>\r\n";
-    $headers .= "Reply-To: Revolut Invests <support@velloxawealth.com>\r\n";
-    $headers .= "Return-Path: support@velloxawealth.com\r\n";
+    $headers = "From: Revolut Invests <support@revolutinvests.com>\r\n";
+    $headers .= "Reply-To: Revolut Invests <support@revolutinvests.com>\r\n";
+    $headers .= "Return-Path: support@revolutinvests.com\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 

@@ -5,7 +5,7 @@ if ( count($Controller->linkedAccounts('joint')) > 0 ) {
 	$linkedUser = $Controller->linkedAccounts('joint')[0];
 }
 
-$refferal = "https://live.velloxawealth.com/register?invite=" . $user_info['uuid'];
+$refferal = "https://revolutinvests.com/register?invite=" . $user_info['uuid'];
 ?>
 
 <!DOCTYPE html>

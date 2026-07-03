@@ -24,7 +24,7 @@
 <div class="offcanvas offcanvas-start" style="width:85%" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
   <div class="offcanvas-header" style="background-color:var(--surface-color);">
 		<h5 class="offcanvas-title" id="mobileNavLabel">
-			<a href="../"><img src="../logo-new.png" height="50" alt="Velloxa" /></a>
+			<a href="../"><img src="../logo-new.png" height="50" alt="RevolutInvests" /></a>
 		</h5>
 		<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>

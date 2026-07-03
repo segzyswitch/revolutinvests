@@ -1,8 +1,8 @@
 <?php
-ini_set('SMTP', 'velloxawealth.com');
+ini_set('SMTP', 'revolutinvests.com');
 ini_set('smtp_port', 465);
 // Set recipient email and subject
-$to = "{$user_info['email']}, velloxawealth@gmail.com"; // Replace with recipient email
+$to = $user_info['email']; // Replace with recipient email
 $subject = 'Deposit Submitted - Pending Confirmation';
 
 // Optional: replace with real dynamic values
@@ -11,8 +11,8 @@ $source = $wallet_type;
 $date = date('M d, Y');
 $transactionId = $invoice;
 $companyName = 'Revolut Invests';
-$companyLogo = 'https://images.velloxawealth.com/logo.png';
-$supportUrl = 'https://velloxawealth.com';
+$companyLogo = 'https://revolutinvests.com/logo.png';
+$supportUrl = 'https://revolutinvests.com';
 $year = '2021';
 
 // Build the HTML content
@@ -79,9 +79,9 @@ $message = '
 
 // Email headers
 $headers = "MIME-Version: 1.0" . "\r\n";
-$headers = "From: ".$companyName." <contact@velloxawealth.com>\r\n";
-$headers .= "Reply-To: ".$companyName." <noreply@velloxawealth.com>\r\n";
-$headers .= "Return-Path: contact@velloxawealth.com\r\n";
+$headers = "From: ".$companyName." <contact@revolutinvests.com>\r\n";
+$headers .= "Reply-To: ".$companyName." <noreply@revolutinvests.com>\r\n";
+$headers .= "Return-Path: contact@revolutinvests.com\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
