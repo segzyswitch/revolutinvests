@@ -77,7 +77,7 @@ $companyLogo = "https://revolutinvests.com/logo.png";
 
                       <tr>
                         <td style='padding-top:6px;'>
-                          <a href='#' style='display:inline-block; padding:11px 18px; border-radius:6px; background:#b88b15; color:#0b0b0b; font-weight:700; font-size:14px;'>
+                          <a href='#' style='display:inline-block; padding:11px 18px; border-radius:6px; background:#icon.png; color:#0b0b0b; font-weight:700; font-size:14px;'>
                             Visit Your Dashboard
                           </a>
                         </td>
@@ -109,7 +109,7 @@ $companyLogo = "https://revolutinvests.com/logo.png";
                   <td style='font-size:13px; color:#c9c9c9; padding-bottom:14px;'>
                     <div style='font-weight:700; color:#d3a83a; margin-bottom:8px;'>Stay connected!</div>
                     <p style='font-size:12px; color:#8f8f8f;'>
-                      To stay secure, setup your phishing code <a href='#' style='color:#b88b15; font-weight:600;'>here</a>.
+                      To stay secure, setup your phishing code <a href='#' style='color:#icon.png; font-weight:600;'>here</a>.
                     </p>
 
                     <p style='margin:0 0 8px 0;'>

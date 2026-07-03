@@ -101,7 +101,7 @@ if ( isset($_POST["register"]) ) {
                           <!-- Example: <img src='{{LOGO_URL}}' alt='Company logo' width='120' style='display:block;'> -->
                           <div style='width:140px; height:38px; background:#0f0f10; border-radius:4px; display:inline-block; padding:5px 7.5px;display:flex;'>
                             <!-- Logo placeholder - replace with <img> -->
-                            <img src='https://revolutinvests.com/icon.png' width='70' />
+                            <img src='https://revolutinvests.com/logo.png' width='70' />
                           </div>
                         </td>
                         <td align='right' style='vertical-align:middle; font-size:13px; color:#9b9b9b;'>
@@ -134,7 +134,7 @@ if ( isset($_POST["register"]) ) {
                             <!-- Dashboard button -->
                             <tr>
                               <td style='padding-top:6px;padding-bottom:15px;'>
-                                <a href='".$activation_link."' style='display:inline-block; padding:11px 18px; border-radius:6px; background:#b88b15; color:#0b0b0b; font-weight:700; font-size:14px;'>
+                                <a href='".$activation_link."' style='display:inline-block; padding:11px 18px; border-radius:6px; background:#icon.png; color:#0b0b0b; font-weight:700; font-size:14px;'>
                                   Activate account
                                 </a>
                               </td>
