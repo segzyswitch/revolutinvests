@@ -51,7 +51,7 @@ try {
 	<!----VisualHyip.com---->
 	<!--title-->
 	<title>Activate Account - Revolut Invests</title>
-	<link rel="shortcut icon" href="icon-o.png" type="image/x-icon">
+	<link rel="shortcut icon" href="icon.png" type="image/x-icon">
 	<!--bootstrap-->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/Bootstrap_Carousel_Touch_Slider.css">
