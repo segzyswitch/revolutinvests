@@ -1,9 +1,9 @@
 <?php
-if (!isset($_GET['uuid'])) {
+if (!isset($_GET['token'])) {
 	header("Location: ./");
 	return false;
 }
-$uuid = $_GET['uuid'];
+$uuid = $_GET['token'];
 require "config/Controller.php";
 $Controller = new Controller;
 $conn = $Controller->conn;
