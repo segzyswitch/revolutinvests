@@ -13,7 +13,7 @@
 </head>
 
 <body class="auth-page">
-	<div class="container" style="background-image:url(../images/register-bg.png);background-size:cover;background-position:left;">
+	<div class="container" style="background-image:url(../image/register-bg.png);background-size:cover;background-position:left;">
 		<div class="row py-5">
 			<div class="col-sm-6 ms-auto">
 				<div class="text-center mb-4">
