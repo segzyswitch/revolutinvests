@@ -113,7 +113,7 @@
             <input type="text" name="wallet_address" class="form-control" required />
             <input type="hidden" id="query_type" name="add_wallet">
           </div>
-          <div class="form-item mb-3 icon-input">
+          <div class="form-item mb-3 qr-input">
             <label class="form-label">Wallet QR-Code</label>
             <input type="file" name="qrcode" class="form-control" />
           </div>

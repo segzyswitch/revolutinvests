@@ -554,17 +554,46 @@ if ( isset($_POST['update_wallet']) ) {
   $name = filter_var($_POST['name'], FILTER_SANITIZE_SPECIAL_CHARS);
   $wallet_address = filter_var($_POST['wallet_address'], FILTER_SANITIZE_SPECIAL_CHARS);
 
-  $sql = "UPDATE crypto_wallets
-  SET name = '$name',
-  wallet_address = '$wallet_address'
-  WHERE id = '$wallet_id'";
-  $query = $conn->prepare($sql);
+  // Validate QR Code
+  if ($_FILES['qrcode']['size'] > 0) {
+    // Upload QR Code file
+    $qr_name = $_FILES['qrcode']['name'];
+    $qr_ext = substr($qr_name, (strlen($qr_name)-4), 4);
+    $qr_save = 'qr_' . generateUniqueId(10) . $qr_ext;
 
-  try {
-    $query->execute();
-    echo "Wallet successfully updated";
-  } catch (PDOException $e) {
-    echo $e->getMessage();
+    $qr_tmp = $_FILES['qrcode']['tmp_name'];
+    $qr_target = $target_dir . $qr_save;
+
+    if ( move_uploaded_file($qr_tmp, $qr_target) ) {
+      $sql = "UPDATE crypto_wallets
+      SET name = '$name',
+      wallet_address = '$wallet_address',
+      qrcode = '$qr_save'
+      WHERE id = '$wallet_id'";
+      $query = $conn->prepare($sql);
+      try {
+        $query->execute();
+        echo "Wallet successfully updated";
+      } catch (PDOException $e) {
+        echo $e->getMessage();
+      }
+    } else {
+      echo "An error occurred while uploading QR code, check image and try again";
+      return false;
+    }
+  }else {
+    $sql = "UPDATE crypto_wallets
+    SET name = '$name',
+    wallet_address = '$wallet_address'
+    WHERE id = '$wallet_id'";
+    $query = $conn->prepare($sql);
+
+    try {
+      $query->execute();
+      echo "Wallet successfully updated";
+    } catch (PDOException $e) {
+      echo $e->getMessage();
+    }
   }
 }
 // delete wallet
