@@ -102,7 +102,7 @@
           <p class="mb-3">Enter wallet details below</p>
           <div class="form-item mb-3 icon-input">
             <label class="form-label">Icon</label>
-            <input type="file" name="image" class="form-control" required />
+            <input type="file" name="image" class="form-control" />
           </div>
           <div class="form-item mb-3">
             <label class="form-label">Wallet name</label>
@@ -171,7 +171,7 @@
   <script>
     function newWallet() {
       $("#query_type").attr('name', 'add_wallet');
-      $(".icon-input").show(0);
+      $(".icon-input").prop('required', false).show(0);
       $("input").val("");
     }
     $(".edit-payment").click(function(){
