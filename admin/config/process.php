@@ -512,7 +512,7 @@ if ( isset($_POST['add_wallet']) ) {
   $icon_save = 'icon_' . generateUniqueId(10) . $icon_ext;
 
   $icon_tmp = $_FILES['image']['tmp_name'];
-  $target_dir = "../../uploads/";
+  $target_dir = "../uploads/";
   $icon_target = $target_dir . $icon_save;
 
   // Upload QR Code file
