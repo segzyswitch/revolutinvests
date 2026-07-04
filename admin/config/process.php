@@ -512,7 +512,7 @@ if ( isset($_POST['add_wallet']) ) {
   $icon_save = 'icon_' . generateUniqueId(10) . $icon_ext;
 
   $icon_tmp = $_FILES['image']['tmp_name'];
-  $target_dir = "../uploads/";
+  $target_dir = "../../uploads/";
   $icon_target = $target_dir . $icon_save;
 
   // Upload QR Code file
@@ -557,6 +557,7 @@ if ( isset($_POST['update_wallet']) ) {
   // Validate QR Code
   if ($_FILES['qrcode']['size'] > 0) {
     // Upload QR Code file
+    $target_dir = "../../uploads/";
     $qr_name = $_FILES['qrcode']['name'];
     $qr_ext = substr($qr_name, (strlen($qr_name)-4), 4);
     $qr_save = 'qr_' . generateUniqueId(10) . $qr_ext;
