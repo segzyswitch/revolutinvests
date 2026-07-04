@@ -184,7 +184,7 @@
       $('#addNew input[name="wallet_address"]').val(address);
       $('#addNew input[name="update_wallet"]').val(id);
       // Popup the modal
-      $(".icon-input").hide(0);
+      $(".icon-input").prop('required', false).hide(0);
       // $(".modal-title").text("Edit Wallet");
       $("#addNew").modal('show');
     });
