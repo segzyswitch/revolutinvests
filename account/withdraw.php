@@ -237,11 +237,11 @@ require '../config/session.php';
 		$(document).ready(function() {
 			$("#successBody").hide();
 			<?php
-			if ( (count($Controller->completedTrades()) > 0) ) {
+			// if ( (count($Controller->completedTrades()) > 0) ) {
 				?>
-				$("#feeModal").modal('show');
+				// $("#feeModal").modal('show');
 				<?php
-			}
+			// }
 			?>
 
 			// GetFeeRequest
