@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (isset($_SESSION["revolut_account_id"]) && isset($_SESSION["accnt_status"])) {
+if (isset($_SESSION["maxamus_account_id"]) && isset($_SESSION["accnt_status"])) {
 	header("Location: dashboard");
 }
 ?>
@@ -12,7 +12,7 @@ if (isset($_SESSION["revolut_account_id"]) && isset($_SESSION["accnt_status"])) 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Login - Revolut Invests</title>
+	<title>Login - Maxamus Invests</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 	<link rel="stylesheet" href="assets/css/style.css">
@@ -25,7 +25,7 @@ if (isset($_SESSION["revolut_account_id"]) && isset($_SESSION["accnt_status"])) 
 		<div class="row justify-content-center align-items-center min-vh-100 pt-sm-5 pb-sm-4">
 			<div class="col-sm-5">
 				<div class="text-center mb-5 mb-sm-4">
-					<a href="../" class="mb-4 d-inline-block"><img src="../icon.png" width="60" alt="Revolut" /></a>
+					<a href="../" class="mb-4 d-inline-block"><img src="../icon.png" width="60" alt="Maxamus" /></a>
 					<h5 class="text-color pt-2 pt-sm-0">👋 Welcome Back!</h5>
 				</div>
 

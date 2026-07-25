@@ -50,7 +50,7 @@ try {
 	<!----421---->
 	<!----VisualHyip.com---->
 	<!--title-->
-	<title>Activate Account - Revolut Invests</title>
+	<title>Activate Account - Maxamus Invests</title>
 	<link rel="shortcut icon" href="icon.png" type="image/x-icon">
 	<!--bootstrap-->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">

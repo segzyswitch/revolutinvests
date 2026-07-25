@@ -16,11 +16,11 @@ class Controller
 
     // $this->db_username = 'root';
     // $this->db_password = '';
-    // $this->db_name = 'revolutinvests';
+    // $this->db_name = 'maxamusinvests';
 
     $this->db_username = 'cannannf_main';
     $this->db_password = 'Primestar1$';
-    $this->db_name = 'cannannf_revolutinvests';
+    $this->db_name = 'cannannf_maxamusinvests';
 
     try {
       $this->conn = @new PDO("mysql:host=$this->db_server;dbname=$this->db_name", $this->db_username, $this->db_password);
@@ -35,7 +35,7 @@ class Controller
   // USERS INFO
   public function User()
   {
-    $user_id = $_SESSION["revolut_account_id"];
+    $user_id = $_SESSION["maxamus_account_id"];
     $sql = "SELECT * FROM users WHERE id = '$user_id'";
     try {
       $query = $this->conn->prepare($sql);
@@ -80,7 +80,7 @@ class Controller
   // Linked Accounts
   public function linkedAccounts($type = null)
   {
-    $user_id = $_SESSION["revolut_account_id"];
+    $user_id = $_SESSION["maxamus_account_id"];
     if ($type == null)
       $sql = "SELECT * FROM linked_account WHERE user_id = '$user_id' ORDER BY id DESC";
     else
@@ -98,7 +98,7 @@ class Controller
   // Login history
   public function userActivity()
   {
-    $user_id = $_SESSION["revolut_account_id"];
+    $user_id = $_SESSION["maxamus_account_id"];
     $sql = "SELECT * FROM user_activity WHERE user_id = '$user_id' ORDER BY id DESC LIMIT 50";
     try {
       $query = $this->conn->prepare($sql);
@@ -145,7 +145,7 @@ class Controller
   // Transaction history
   public function Transactions($limit)
   {
-    $user_id = $_SESSION["revolut_account_id"];
+    $user_id = $_SESSION["maxamus_account_id"];
     $sql = "SELECT * FROM transactions WHERE user_id = '$user_id' ORDER BY id DESC LIMIT $limit";
     try {
       $query = $this->conn->prepare($sql);
@@ -158,7 +158,7 @@ class Controller
   }
   public function singleTransaction($invoice)
   {
-    // $user_id = $_SESSION["revolut_account_id"];
+    // $user_id = $_SESSION["maxamus_account_id"];
     $sql = "SELECT * FROM transactions WHERE invoice = '$invoice'";
     try {
       $query = $this->conn->prepare($sql);
@@ -171,7 +171,7 @@ class Controller
   }
   public function transactionById($id)
   {
-    // $user_id = $_SESSION["revolut_account_id"];
+    // $user_id = $_SESSION["maxamus_account_id"];
     $sql = "SELECT * FROM transactions WHERE id = '$id'";
     try {
       $query = $this->conn->prepare($sql);
@@ -186,7 +186,7 @@ class Controller
   // All deposits
   public function Deposits($limit = 10)
   {
-    $user_id = $_SESSION["revolut_account_id"];
+    $user_id = $_SESSION["maxamus_account_id"];
     $sql = "SELECT * FROM transactions
     WHERE user_id='$user_id'
     AND type='deposit'
@@ -202,7 +202,7 @@ class Controller
   }
   public function totalDeposits()
   {
-    $user_id = $_SESSION["revolut_account_id"];
+    $user_id = $_SESSION["maxamus_account_id"];
     $sql = "SELECT * FROM transactions
     WHERE user_id='$user_id'
     AND type = 'deposit'";
@@ -224,7 +224,7 @@ class Controller
   }
   public function pendingDeposits()
   {
-    $user_id = $_SESSION["revolut_account_id"];
+    $user_id = $_SESSION["maxamus_account_id"];
     $sql = "SELECT * FROM transactions
     WHERE user_id='$user_id'
     AND type = 'deposit'
@@ -247,7 +247,7 @@ class Controller
   }
   public function completedDeposits()
   {
-    $user_id = $_SESSION["revolut_account_id"];
+    $user_id = $_SESSION["maxamus_account_id"];
     $sql = "SELECT * FROM transactions
     WHERE user_id='$user_id'
     AND type = 'deposit'
@@ -272,7 +272,7 @@ class Controller
   // All withdrawals
   public function Withdrawals($limit = 100)
   {
-    $user_id = $_SESSION["revolut_account_id"];
+    $user_id = $_SESSION["maxamus_account_id"];
     $sql = "SELECT * FROM transactions
     WHERE user_id='$user_id'
     AND type='withdrawal'
@@ -290,7 +290,7 @@ class Controller
   // Trades
   public function Trades($limit)
   {
-    $user_id = $_SESSION["revolut_account_id"];
+    $user_id = $_SESSION["maxamus_account_id"];
     $sql = "SELECT * FROM trades
     LEFT JOIN plans ON trades.plan_id = plans.id
     WHERE trades.user_id='$user_id'
@@ -318,7 +318,7 @@ class Controller
   }
   public function runningTrades()
   {
-    $user_id = $_SESSION["revolut_account_id"];
+    $user_id = $_SESSION["maxamus_account_id"];
     $sql = "SELECT * FROM trades
     WHERE user_id='$user_id'
     AND status = 'running'";
@@ -340,7 +340,7 @@ class Controller
   }
   public function completedTrades()
   {
-    $user_id = $_SESSION["revolut_account_id"];
+    $user_id = $_SESSION["maxamus_account_id"];
     $sql = "SELECT * FROM trades
     WHERE user_id='$user_id'
     AND status = 'completed'";
@@ -362,7 +362,7 @@ class Controller
   }
   public function totalInvested()
   {
-    $user_id = $_SESSION["revolut_account_id"];
+    $user_id = $_SESSION["maxamus_account_id"];
     $sql = "SELECT * FROM trades
     WHERE user_id='$user_id'";
     try {
@@ -380,7 +380,7 @@ class Controller
   }
   public function currentInvestment()
   {
-    $user_id = $_SESSION["revolut_account_id"];
+    $user_id = $_SESSION["maxamus_account_id"];
     $sql = "SELECT * FROM trades
     WHERE user_id='$user_id'
     AND status = 'running'";
@@ -399,7 +399,7 @@ class Controller
   }
   public function pendingRetruns()
   {
-    $user_id = $_SESSION["revolut_account_id"];
+    $user_id = $_SESSION["maxamus_account_id"];
     $sql = "SELECT * FROM trades
     WHERE user_id='$user_id'
     AND status = 'running'";
@@ -419,7 +419,7 @@ class Controller
   }
   public function totalValuation()
   {
-    $user_id = $_SESSION["revolut_account_id"];
+    $user_id = $_SESSION["maxamus_account_id"];
     $sql = "SELECT * FROM trades
     WHERE user_id='$user_id'
     AND status = 'running'";
@@ -439,7 +439,7 @@ class Controller
   }
   public function totalRetruns()
   {
-    $user_id = $_SESSION["revolut_account_id"];
+    $user_id = $_SESSION["maxamus_account_id"];
     $sql = "SELECT * FROM trades
     WHERE user_id='$user_id'";
     try {
@@ -458,7 +458,7 @@ class Controller
   }
   public function totalProfit()
   {
-    $user_id = $_SESSION["revolut_account_id"];
+    $user_id = $_SESSION["maxamus_account_id"];
     $sql = "SELECT * FROM trades
     WHERE user_id='$user_id'
     AND status = 'completed'";

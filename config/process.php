@@ -8,9 +8,9 @@ session_start();
 require "../config/Controller.php";
 $Controller = new Controller;
 $conn = $Controller->conn;
-if ( isset($_SESSION["revolut_account_id"]) ) {
+if ( isset($_SESSION["maxamus_account_id"]) ) {
   $user_info = $Controller->User();
-  $user_id = $_SESSION["revolut_account_id"];
+  $user_id = $_SESSION["maxamus_account_id"];
   $wallet_bal = $user_info['wallet_bal'];
 }
 
@@ -133,7 +133,7 @@ if ( isset($_POST["user_login"]) ) {
           echo $e->getMessage();
         }
 
-        $_SESSION["revolut_account_id"] = $user_id;
+        $_SESSION["maxamus_account_id"] = $user_id;
         $_SESSION["accnt_status"] = $conf_row["status"];
         echo "Login successful";
       }

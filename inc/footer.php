@@ -74,7 +74,7 @@
       <hr class="border-1 border-light mb-0" style="opacity: 1;">
       <div class="d-flex flex-xl-row flex-column gap-xl-2 gap-3 align-items-center justify-content-between">
         <span class="text-white fs-6 font-2">
-          Copyright © 2024 Revolut Invests. All Rights Reserved.
+          Copyright © 2024 Maxamus Invests. All Rights Reserved.
         </span>
         <!-- <div class="d-flex flex-xl-row flex-column gap-3">
           <div>

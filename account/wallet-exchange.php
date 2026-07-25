@@ -9,8 +9,8 @@ require '../config/session.php';
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="csrf-token" content="ynDPA8gYOyvzsdpB0EdOgNiHFxvQCV25Yebn7xlP">
-	<meta name="keywords" content="Revolut Invests">
-	<meta name="description" content="Revolut Invests">
+	<meta name="keywords" content="Maxamus Invests">
+	<meta name="description" content="Maxamus Invests">
 	<link rel="canonical" href="./user/wallet-exchange" />
 	<link rel="shortcut icon" href="./../icon.png" type="image/x-icon" />
 
@@ -38,7 +38,7 @@ require '../config/session.php';
 		}
 	</style>
 
-	<title>Revolut Invests - Wallet Exchange
+	<title>Maxamus Invests - Wallet Exchange
 	</title>
 
 

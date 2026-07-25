@@ -1,6 +1,6 @@
 <?php
-$companyName = "Revolut Invests";
-$companyLogo = "https://revolutinvests.com/logo.png";
+$companyName = "Maxamus Invests";
+$companyLogo = "https://maxamusinvests.com/logo.png";
 ?>
 
 <!doctype html>

@@ -30,7 +30,7 @@
 		}
 	</style>
 
-	<title>Revolut Invests - Send Money
+	<title>Maxamus Invests - Send Money
 	</title>
 
 

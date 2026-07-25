@@ -1,7 +1,7 @@
 <!-- Desktop Sidebar -->
 <div class="sidebar d-none d-lg-flex flex-column">
 	<div class="w-100 mb-4 text-center">
-		<a href="../"><img src="../logo.png" height="40" alt="Revolut" /></a>
+		<a href="../"><img src="../logo.png" height="40" alt="Maxamus" /></a>
 		 <!-- <div class="mx-auto d-flex rounded-circle" style="width:50px;height:50px;background:rgba(82, 37, 0, 1);">
 				<img src="../icon-0.png" class="m-auto" width="45" width="45" alt="VW">
 			</div> -->

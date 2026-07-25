@@ -1,15 +1,15 @@
 <?php
 session_start();
 require "../config/Controller.php";
-ini_set('SMTP', 'revolutinvests.com');
+ini_set('SMTP', 'maxamusinvests.com');
 ini_set('smtp_port', 465);
 
 $Controller = new Controller;
 $conn = $Controller->conn;
 
-if ( isset($_SESSION["revolut_account_id"]) ) {
+if ( isset($_SESSION["maxamus_account_id"]) ) {
   $user_info = $Controller->User();
-  $user_id = $_SESSION["revolut_account_id"];
+  $user_id = $_SESSION["maxamus_account_id"];
   $wallet_bal = $user_info['wallet_bal'];
 }
 // GENERATE UNIQUE ID
@@ -59,7 +59,7 @@ if ( isset($_POST["register"]) ) {
   }
 
   // activation link
-  $activation_link = "https://revolutinvests.com/activate.php?token=" . $uuid;
+  $activation_link = "https://maxamusinvests.com/activate.php?token=" . $uuid;
 
   // Insert record
   $sql = "INSERT INTO users(uuid, fname, lname, email, phone, password, alt_password, referral)
@@ -73,7 +73,7 @@ if ( isset($_POST["register"]) ) {
       <html>
       <head>
         <meta charset='utf-8'>
-        <title>Activate Your Account | RevolutInvests Wallet</title>
+        <title>Activate Your Account | MaxamusInvests Wallet</title>
         <meta name='viewport' content='width=device-width,initial-scale=1'>
         <style>
           /* Some clients ignore style tags — important styles are inline below.
@@ -101,7 +101,7 @@ if ( isset($_POST["register"]) ) {
                           <!-- Example: <img src='{{LOGO_URL}}' alt='Company logo' width='120' style='display:block;'> -->
                           <div style='width:140px; height:38px; background:#0f0f10; border-radius:4px; display:inline-block; padding:5px 7.5px;display:flex;'>
                             <!-- Logo placeholder - replace with <img> -->
-                            <img src='https://revolutinvests.com/logo.png' width='70' />
+                            <img src='https://maxamusinvests.com/logo.png' width='70' />
                           </div>
                         </td>
                         <td align='right' style='vertical-align:middle; font-size:13px; color:#9b9b9b;'>
@@ -124,7 +124,7 @@ if ( isset($_POST["register"]) ) {
                       <tr>
                         <td>
                           <h4 style='color:#ccc; font-weight:700;'>Hello, ".$fname." ".$lname."</h4>
-                          <p style='font-size:14px; line-height:20px; color:#d3d3d3;'>Welcome to Revolut Invests platform! We're excited to have you on board. To complete your registration and activate your account, please confirm your email address by clicking the link below:</p>
+                          <p style='font-size:14px; line-height:20px; color:#d3d3d3;'>Welcome to Maxamus Invests platform! We're excited to have you on board. To complete your registration and activate your account, please confirm your email address by clicking the link below:</p>
                         </td>
                       </tr>
                       <!-- Withdrawal details box -->
@@ -152,7 +152,7 @@ if ( isset($_POST["register"]) ) {
                       <tr>
                         <td style='border-top:1px solid rgba(255,255,255,0.04); padding-top:14px;'>
                           <p style='margin:0; font-size:13px; color:#9a9a9a; line-height:19px;'>For security reasons, this link will expire in 24 hours. If you did not sign up for an account with us, please ignore this email.</p>
-                          <p style='margin:10px 0 0 0; font-size:13px; color:#9a9a9a; line-height:19px;'>If you have any questions or need help, feel free to contact our support team at contact@revolutinvests.com</p>
+                          <p style='margin:10px 0 0 0; font-size:13px; color:#9a9a9a; line-height:19px;'>If you have any questions or need help, feel free to contact our support team at contact@maxamusinvests.com</p>
                           <p style='margin:10px 0 0 0; font-size:12px; color:#777; font-style:italic;'>
                             This is an automated message, please do not reply.
                           </p>
@@ -167,7 +167,7 @@ if ( isset($_POST["register"]) ) {
                     <table role='presentation' width='100%' cellpadding='0' cellspacing='0'>
                       <tr>
                         <td style='padding:16px 0 20px 0; font-size:11px; color:#6f6f6f; text-align:center;'>
-                          © <span id='year'>2021</span> Revolut Invests. All rights reserved.
+                          © <span id='year'>2021</span> Maxamus Invests. All rights reserved.
                         </td>
                       </tr>
                     </table>
@@ -181,10 +181,10 @@ if ( isset($_POST["register"]) ) {
       </body>
       </html>
     ";
-    $subject = "Confirm Your Account - Revolut Invests";
-    $headers = "From: Revolut Invests <support@revolutinvests.com>\r\n";
-    $headers .= "Reply-To: Revolut Invests <support@revolutinvests.com>\r\n";
-    $headers .= "Return-Path: support@revolutinvests.com\r\n";
+    $subject = "Confirm Your Account - Maxamus Invests";
+    $headers = "From: Maxamus Invests <support@maxamusinvests.com>\r\n";
+    $headers .= "Reply-To: Maxamus Invests <support@maxamusinvests.com>\r\n";
+    $headers .= "Return-Path: support@maxamusinvests.com\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 

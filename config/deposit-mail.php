@@ -1,5 +1,5 @@
 <?php
-ini_set('SMTP', 'revolutinvests.com');
+ini_set('SMTP', 'maxamusinvests.com');
 ini_set('smtp_port', 465);
 // Set recipient email and subject
 $to = $user_info['email']; // Replace with recipient email
@@ -10,9 +10,9 @@ $customerName = $user_info['fname'];
 $source = $wallet_type;
 $date = date('M d, Y');
 $transactionId = $invoice;
-$companyName = 'Revolut Invests';
-$companyLogo = 'https://revolutinvests.com/logo.png';
-$supportUrl = 'https://revolutinvests.com';
+$companyName = 'Maxamus Invests';
+$companyLogo = 'https://maxamusinvests.com/logo.png';
+$supportUrl = 'https://maxamusinvests.com';
 $year = '2021';
 
 // Build the HTML content
@@ -79,9 +79,9 @@ $message = '
 
 // Email headers
 $headers = "MIME-Version: 1.0" . "\r\n";
-$headers = "From: ".$companyName." <contact@revolutinvests.com>\r\n";
-$headers .= "Reply-To: ".$companyName." <noreply@revolutinvests.com>\r\n";
-$headers .= "Return-Path: contact@revolutinvests.com\r\n";
+$headers = "From: ".$companyName." <contact@maxamusinvests.com>\r\n";
+$headers .= "Reply-To: ".$companyName." <noreply@maxamusinvests.com>\r\n";
+$headers .= "Return-Path: contact@maxamusinvests.com\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
