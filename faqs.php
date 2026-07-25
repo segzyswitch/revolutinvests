@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.2/animation_utility.css">
 	<link rel="icon" type="image/x-icon" href="icon.png">
-	<title>Maxamus Invests - FAQs</title>
+	<title>Maxamus Invest - FAQs</title>
 </head>
 
 <body>
@@ -376,6 +376,6 @@
 </body>
 
 
-<!-- Mirrored from html.rometheme.net/Maxamus Invests/faq.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 May 2026 08:19:49 GMT -->
+<!-- Mirrored from html.rometheme.net/Maxamus Invest/faq.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 May 2026 08:19:49 GMT -->
 
 </html>

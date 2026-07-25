@@ -6,8 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="csrf-token" content="0PBnSGpBOeU6uMyjETolsJPb2ENYjKaQCWd9mtKF">
-	<meta name="keywords" content="Maxamus Invests">
-	<meta name="description" content="Maxamus Invests">
+	<meta name="keywords" content="Maxamus Invest">
+	<meta name="description" content="Maxamus Invest">
 	<link rel="canonical" href="https://zenithwealthpro.com/account/user/support-ticket/show/SUPT885960" />
 	<link rel="shortcut icon" href="https://zenithwealthpro.com/account/../icon.png"
 		type="image/x-icon" />
@@ -36,7 +36,7 @@
 		}
 	</style>
 
-	<title>Maxamus Invests - Add New Support Ticket
+	<title>Maxamus Invest - Add New Support Ticket
 	</title>
 
 

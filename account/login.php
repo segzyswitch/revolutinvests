@@ -12,7 +12,7 @@ if (isset($_SESSION["maxamus_account_id"]) && isset($_SESSION["accnt_status"])) 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Login - Maxamus Invests</title>
+	<title>Login - Maxamus Invest</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 	<link rel="stylesheet" href="assets/css/style.css">

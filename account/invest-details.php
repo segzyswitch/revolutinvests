@@ -28,7 +28,7 @@ $progress = $totalDays > 0 ? round(($elapsedDays / $totalDays) * 100, 1) : 0;
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title><?php echo $transaction['plan_name'] ?> Plan - Maxamus Invests</title>
+	<title><?php echo $transaction['plan_name'] ?> Plan - Maxamus Invest</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 	<link rel="stylesheet" href="assets/css/style.css">

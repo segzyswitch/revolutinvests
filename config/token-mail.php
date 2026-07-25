@@ -1,18 +1,18 @@
 <?php
-ini_set('SMTP', 'maxamusinvests.com');
+ini_set('SMTP', 'maxamusinvest.com');
 ini_set('smtp_port', 465);
 // Set recipient email and subject
 $to = $email; // Replace with recipient email
-$subject = 'Account information updated | Maxamus Invests';
+$subject = 'Account information updated | Maxamus Invest';
 
 // Optional: replace with real dynamic values
 $customerName = $User['fname'];
 $source = $wallet_type;
 $date = date('M d, Y');
 $transactionId = $invoice;
-$companyName = 'Maxamus Invests';
-$companyLogo = 'https://maxamusinvests.com/logo.png';
-$supportUrl = 'https://maxamusinvests.com';
+$companyName = 'Maxamus Invest';
+$companyLogo = 'https://maxamusinvest.com/logo.png';
+$supportUrl = 'https://maxamusinvest.com';
 $year = '2021';
 
 // Build the HTML content
@@ -43,7 +43,7 @@ $message = '
               </p>
               <p style="font-size: 16px; color: #333333; margin-bottom: 20px;">
                 Your account information has been successfully updated.
-								You can now login to your account with your new details at https://maxamusinvests.com.
+								You can now login to your account with your new details at https://maxamusinvest.com.
               </p>
               <p style="font-size: 16px; color: #333333;">
                 If you have any questions regarding this email, feel free to contact our support team.
@@ -70,9 +70,9 @@ $message = '
 
 // Email headers
 $headers = "MIME-Version: 1.0" . "\r\n";
-$headers = "From: ".$companyName." <contact@maxamusinvests.com>\r\n";
-$headers .= "Reply-To: ".$companyName." <noreply@maxamusinvests.com>\r\n";
-$headers .= "Return-Path: contact@maxamusinvests.com\r\n";
+$headers = "From: ".$companyName." <contact@maxamusinvest.com>\r\n";
+$headers .= "Reply-To: ".$companyName." <noreply@maxamusinvest.com>\r\n";
+$headers .= "Return-Path: contact@maxamusinvest.com\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
